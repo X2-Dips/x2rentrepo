@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class UserRegistrationForm {
+	//it holds fisrt name of the user
 	private String firstName;
 	private String lastName;
 	private String dob;
