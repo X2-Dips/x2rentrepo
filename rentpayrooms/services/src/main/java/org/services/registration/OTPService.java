@@ -1,6 +1,5 @@
 package org.services.registration;
 
-import java.io.IOException;
 import java.security.SecureRandom;
 import java.sql.Timestamp;
 import java.util.HashMap;
@@ -18,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 public class OTPService {
 	private Map<String, OTP> otpCache=new HashMap<>();
 	@Autowired
-	RestTemplate restTemplate= new RestTemplate();
+	RestTemplate restTemplate;
 	
 	private class OTP{
 		private Timestamp otpExpiryTime;
