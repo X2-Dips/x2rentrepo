@@ -24,7 +24,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin
+@CrossOrigin(origins="http://localhost:3000")
 public class AuthController {
 
     @Autowired
@@ -53,6 +53,13 @@ public class AuthController {
 
         String token = tokenProvider.createToken(authentication);
         return ResponseEntity.ok(new AuthResponse(token));
+    }
+    
+   @GetMapping("/showdata")
+    public User showuserdata(@RequestParam("name") String name)
+    {
+    	User user=userRepository.findByname(name);
+    	return user;
     }
 
     @PostMapping("/signup")
