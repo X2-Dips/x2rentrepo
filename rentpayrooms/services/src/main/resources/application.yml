@@ -1,9 +1,9 @@
 spring:
     datasource:
         driver-class-name: com.mysql.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/spring_social?useSSL=false
+        url: jdbc:mysql://localhost:3305/postproperty?useSSL=false
         username: root
-        password: mits
+        password: root
 
     jpa:
         show-sql: true
