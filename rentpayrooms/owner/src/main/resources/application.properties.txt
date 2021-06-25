@@ -1,8 +1,22 @@
 server.port=8080
 
-spring.datasource.url=jdbc:mysql://localhost:3306/rent_pay_rooms
-spring.datasource.username=root
-spring.datasource.password=1234
 
-spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+
+
+
+spring.datasource.url= jdbc:mysql://localhost:3305/postproperty
+spring.datasource.username= root
+spring.datasource.password= root
+
+
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+
+
+
+
+
 spring.jpa.database-platform=org.hibernate.dialect.MySQL5InnoDBDialect
+
